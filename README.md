@@ -115,3 +115,53 @@ The `main.py` script is the primary component of the Market Sentiment Analysis p
 
 Suppose a user selects the companies "Apple Inc." and "Microsoft Corporation" from the dropdown menu in the Streamlit application. The `main.py` script retrieves their historical stock data and sentiment analysis scores, generates interactive charts displaying the data, and presents them to the user for analysis.
 
+# Getting Started
+
+1. **Clone the Repository:**
+   ```bash
+   git clone repository_url>](https://github.com/Ojas-Rohatgi/Stock-Market-Sentiment-Analysis-using-hugging-face.git
+
+2. **Install Dependencies:**
+   ```bash
+   cd <repository_directory>
+   python -m venv venv
+   source venv/bin/activate  # (Linux/Mac)
+   pip install -r requirements.txt
+
+For Windows, use `venv\Scripts\activate`.
+
+3. **Collect Ticker Symbols and Company Names:**
+   ```bash
+   python ticker_collection.py
+
+4. **Run the Main Application:**
+   - Execute the `main.py` script using Streamlit.
+   - This will start the Streamlit application, allowing you to select companies and view stock price and sentiment analysis.
+
+## Files
+
+1. **ticker_collection.py:**
+   - Script for collecting ticker symbols and company names.
+
+2. **companies.csv:**
+   - CSV file containing company names and ticker symbols.
+
+3. **main.py:**
+   - Main application script for visualizing stock price and sentiment analysis.
+
+4. **requirements.txt**
+   - yfinance
+   - pandas
+   - plotly
+   - transformers
+   - tqdm
+   - requests
+   - streamlit
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+## License
+
+MIT License
