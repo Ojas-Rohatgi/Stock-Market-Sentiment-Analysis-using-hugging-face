@@ -137,6 +137,8 @@ For Windows, use `venv\Scripts\activate`.
 4. **Run the Main Application:**
    - Execute the `main.py` script using Streamlit.
    - This will start the Streamlit application, allowing you to select companies and view stock price and sentiment analysis.
+   ```bash
+   streamlit run main.py
 
 ## Files
 
