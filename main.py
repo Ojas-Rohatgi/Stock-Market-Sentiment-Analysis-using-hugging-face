@@ -47,11 +47,12 @@ if selected_companies and enter_button:
                 hists[ticker] = latest_data
 
             sentiment_scores_dict = {}  # Dictionary to store sentiment scores for each stock
+            newsapi_key=""    # Register for News API key on https://newsapi.org/
 
             # Fetch latest news articles about each stock and perform sentiment analysis
             for ticker in selected_tickers:
                 # Retrieve news articles related to the selected company
-                url = f'https://newsapi.org/v2/everything?q={ticker}&language=en&sortBy=publishedAt&apiKey=0a33a230bb6c4a41bc458eeb57d14a3e'
+                url = f'https://newsapi.org/v2/everything?q={ticker}&language=en&sortBy=publishedAt&apiKey=newsapi_key'
                 response = requests.get(url)
 
                 if response.status_code == 200:
